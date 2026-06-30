@@ -525,10 +525,10 @@ while (true) {
             else {
                 for (let i = 0; i < employees.length; i++)
                     console.log(`Id: ${employees[i].id}
-                 Name: ${employees[i].name}
-                 Salary: ${employees[i].salary}
-                 Department: ${employees[i].department}
-                 Experience: ${employees[i].experience}
+                    \nName: ${employees[i].name}
+                    \nSalary: ${employees[i].salary}
+                    \nDepartment: ${employees[i].department}
+                    \nExperience: ${employees[i].experience}
                 `)
                 break;
             }
@@ -540,10 +540,10 @@ while (true) {
                 for (let i = 0; i < employees.length; i++) {
                     if (emp_id === employees[i].id) {
                         console.log(`Id: ${employees[i].id}
-                 Name: ${employees[i].name}
-                 Salary: ${employees[i].salary}
-                 Department: ${employees[i].department}
-                 Experience: ${employees[i].experience}
+                        \nName: ${employees[i].name}
+                        \nSalary: ${employees[i].salary}
+                        \nDepartment: ${employees[i].department}
+                        \nExperience: ${employees[i].experience}
                 `)
                         count++
                         break;
@@ -566,9 +566,9 @@ while (true) {
                     if (emp_id1 === employees[i].id) {
                         let bonus = (15 / 100) * employees[i].salary
                         console.log(`Name: ${employees[i].name}
-                    Old Salary: ${employees[i].salary}
-                    Bonus Amount 15% : ${bonus}
-                    New salary: ${bonus + employees[i].salary}
+                        \nOld Salary: ${employees[i].salary}
+                        \nBonus Amount 15% : ${bonus}
+                        \nNew salary: ${bonus + employees[i].salary}
                    `)
                         employees[i].salary = bonus + employees[i].salary
                         count1++
@@ -592,20 +592,20 @@ while (true) {
                     if (emp_id2 === employees[i].id) {
                         if (employees[i].experience < 2) {
                             console.log(`Name: ${employees[i].name}
-                    Experience: ${employees[i].experience}
-                    Experience Level : Junior Level
+                            \nExperience: ${employees[i].experience}
+                            \nExperience Level : Junior Level
                    `)
                         }
                         else if ((employees[i].experience >= 2) && (employees[i].experience <= 5)) {
                             console.log(`Name: ${employees[i].name}
-                        Experience: ${employees[i].experience}
-                        Experience Level : Mid Level
+                            \nExperience: ${employees[i].experience}
+                            \nExperience Level : Mid Level
                         `)
                         }
                         else {
                             console.log(`Name: ${employees[i].name}
-                        Experience: ${employees[i].experience}
-                        Experience Level : Senior Level
+                            \nExperience: ${employees[i].experience}
+                            \nExperience Level : Senior Level
                         `)
                         }
                         count2++
