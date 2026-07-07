@@ -91,7 +91,7 @@ named_fun("Chicken Biriyani")
 
 /* 4. WhatsApp Status (Anonymous Function) */
 
-let anonymous_fun=function(str)  // Anonymous Function
+let anonymous_fun = function (str)  // Anonymous Function
 {
     console.log(`Status Updated  : ${str}`)
 }
@@ -102,13 +102,12 @@ anonymous_fun(status)
 /* 
 5. Weather App (Arrow Function) */
 
-let arr_fun=(city,temp)=>
-{
-console.log(`${city} Temperature is ${temp}°C`)
+let arr_fun = (city, temp) => {
+    console.log(`${city} Temperature is ${temp}°C`)
 }
-let city=prompt("Enter City Name.")
-let temp=prompt("Enter city Temperature.")
-arr_fun(city,temp);
+let city = prompt("Enter City Name.")
+let temp = prompt("Enter city Temperature.")
+arr_fun(city, temp);
 
 
 /*  6  . Flipkart Offer (IIFE)
@@ -135,13 +134,11 @@ Payment Processing...
 Payment Successful
 */
 
-let makePayment=function(callback)
-{
+let makePayment = function (callback) {
     console.log("Payment Processing ........")
     callback()
 }
-let paymentSuccess = function()
-{
+let paymentSuccess = function () {
     console.log("Payment Successful")
 }
 
@@ -159,15 +156,14 @@ After all videos are finished:
 Playlist Completed
 */
 
-function* youtubePlaylist()
-{
+function* youtubePlaylist() {
     yield "Video 1"
     yield "Video 2"
     yield "Video 3"
     yield "Video 4"
     yield "Playlist Completed."
 }
-let playlist=youtubePlaylist()
+let playlist = youtubePlaylist()
 console.log(playlist.next().value)
 console.log(playlist.next().value)
 console.log(playlist.next().value)
@@ -184,12 +180,11 @@ Store it in a variable and print:
 Total Marks : 485
 */
 
-let calculateTotal = function()
-{
-   let marks = 485
-   return marks
+let calculateTotal = function () {
+    let marks = 485
+    return marks
 }
-let marks =calculateTotal()
+let marks = calculateTotal()
 console.log("Total Marks : " + marks)
 
 
@@ -201,16 +196,15 @@ Return:
 Total Amount
 */
 
-let cartTotal=function(price1, price2, price3)
-{
-let total_price = price1 + price2 + price3
-return total_price
+let cartTotal = function (price1, price2, price3) {
+    let total_price = price1 + price2 + price3
+    return total_price
 }
 let price1 = 500
-let price2 =1200
-let price3 =800
-let total_price = cartTotal(price1,price2,price3)
-console.log("Total Amount : " +total_price)
+let price2 = 1200
+let price3 = 800
+let total_price = cartTotal(price1, price2, price3)
+console.log("Total Amount : " + total_price)
 
 
 /*
@@ -221,15 +215,14 @@ Output:
 Total Salary : 58000
 */
 
-let salary = function(basic, hra, bonus)
-{
+let salary = function (basic, hra, bonus) {
     return basic + hra + bonus
 }
 let basic = 40000
 let hra = 10000
 let bonus = 8000
 let tot_sal = salary(basic, hra, bonus)
-console.log("Total Salary : " +tot_sal)
+console.log("Total Salary : " + tot_sal)
 
 
 /*
@@ -267,8 +260,7 @@ After all coupons:
 No More Coupons
 */
 
-function* gen_fun()
-{
+function* gen_fun() {
     yield "WELCOME10"
     yield "SAVE20"
     yield "SUPER30"
@@ -294,13 +286,11 @@ Processing...
 Transaction Successful
 */
 
-let withdraw=function(callback)
-{
+let withdraw = function (callback) {
     console.log("Processing ........")
     callback()
 }
-let payment_Success = function()
-{
+let payment_Success = function () {
     console.log("Transaction Successful")
 }
 
